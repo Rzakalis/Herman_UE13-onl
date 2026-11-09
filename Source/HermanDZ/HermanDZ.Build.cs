@@ -24,13 +24,7 @@ public class HermanDZ : ModuleRules
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
 		PublicIncludePaths.AddRange(new string[] {
-			"HermanDZ",
-			"HermanDZ/Variant_Horror",
-			"HermanDZ/Variant_Horror/UI",
-			"HermanDZ/Variant_Shooter",
-			"HermanDZ/Variant_Shooter/AI",
-			"HermanDZ/Variant_Shooter/UI",
-			"HermanDZ/Variant_Shooter/Weapons"
+			"HermanDZ"
 		});
 
 		// Uncomment if you are using Slate UI
