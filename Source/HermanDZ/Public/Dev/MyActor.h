@@ -4,7 +4,16 @@
 #include "GameFramework/Actor.h"
 #include "MyActor.generated.h"
 
-UCLASS()
+USTRUCT(Blueprintable)
+struct FMyStruct
+{
+	GENERATED_BODY()
+
+	float Value;
+	FVector Position;
+};
+
+UCLASS(Blueprintable)
 class HERMANDZ_API AMyActor : public AActor
 {
 	GENERATED_BODY()
