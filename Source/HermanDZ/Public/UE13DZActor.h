@@ -16,6 +16,12 @@ public:
 	AUE13DZActor();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DZ|Settings")
 	float MovementSpeed = 300.0f;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "DZ|Settings")
+	int32 Health = 100;
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "DZ|Settings")
+	float Damage = 25.0f;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "DZ|Settings")
+	bool bCanSprint = true;
 
 protected:
 	// Called when the game starts or when spawned
