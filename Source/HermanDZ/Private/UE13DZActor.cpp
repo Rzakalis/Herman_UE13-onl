@@ -15,6 +15,9 @@ AUE13DZActor::AUE13DZActor()
 void AUE13DZActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	DisplayHealth(Health);
+	NativeMessage();
 	
 }
 
@@ -22,6 +25,14 @@ void AUE13DZActor::BeginPlay()
 void AUE13DZActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
+void AUE13DZActor::NativeMessage_Implementation()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Native Event: C++ implementation"));
+}
+
+float AUE13DZActor::CalculateAverage(int32 A, int32 B)
+{
+	return (A + B) / 2.0f;
+}
